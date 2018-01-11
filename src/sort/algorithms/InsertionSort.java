@@ -4,8 +4,8 @@ import java.util.List;
 import util.Util;
 
 /**
- * 
- * @author c. Balkı Gemirter
+ *
+ * @author C. Balkı Gemirter
  *
  */
 public class InsertionSort extends SortAlgorithm {
@@ -13,14 +13,14 @@ public class InsertionSort extends SortAlgorithm {
 	public List<Integer> sort(List<Integer> array) {
 		Util.printArray(array);
 
-		for (int i = 1; i < array.size(); i++) {
-			for (int j = (i-1); j >= 0; j--) {
-				while (array.get(i) < array.get(j)) {
-					swap(array, i, j);
-					Util.printArray(array);
-				}
-			}
-		}
+        for (int i = 1; i < array.size(); i++) {
+            for(int j = i ; j > 0 ; j--){
+                if(array.get(j) < array.get(j-1)){
+                    swap(array, j, j-1);
+                    Util.printArray(array);
+                }
+            }
+        }
 
 		return array;
 	}
