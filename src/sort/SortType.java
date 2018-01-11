@@ -7,10 +7,12 @@ package sort;
  */
 public enum SortType {
 	BUBBLE_SORT("Bubble Sort", "sort.algorithms.BubbleSort"),
-	INSERTION_SORT("Insertion Sort", "sort.algorithms.InsertionSort");
-	private final String name;	
+	INSERTION_SORT("Insertion Sort", "sort.algorithms.InsertionSort"),
+    SELECTION_SORT("Selection Sort", "sort.algorithms.SelectionSort");
+
+	private final String name;
 	private final String className;
-	
+
 	/**
 	 * @param name
 	 * @param className
