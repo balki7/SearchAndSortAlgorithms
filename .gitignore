@@ -1,3 +1,6 @@
 /bin/
 /.idea/
 /.settings/
+.classpath
+.project
+MSc.iml
