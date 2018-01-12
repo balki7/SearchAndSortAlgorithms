@@ -2,6 +2,7 @@ package search;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import search.algorithms.SearchAlgorithm;
 import util.Util;
@@ -12,17 +13,16 @@ import util.Util;
  *
  */
 public class Search {
+	private final static int COUNT = 20;
+
 	public static void main(String args[])
 			throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		List<Integer> array = new ArrayList<Integer>();
-		array.add(10);
-		array.add(20);
-		array.add(30);
-		array.add(40);
-		array.add(50);
-		array.add(60);
+		for (int i = 0; i < COUNT; i++) {
+			array.add(new Random().nextInt(100 - 0) + 1);
+		}
 
-		Integer searchValue = 20;
+		Integer searchValue = new Random().nextInt(100 - 0) + 1;
 
 		System.out.println("Array : ");
 		Util.printArray(array);
