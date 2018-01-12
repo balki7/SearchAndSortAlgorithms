@@ -9,7 +9,8 @@ public enum SortType {
 	BUBBLE_SORT("Bubble Sort", "sort.algorithms.BubbleSort"),
 	INSERTION_SORT("Insertion Sort", "sort.algorithms.InsertionSort"),
     SELECTION_SORT("Selection Sort", "sort.algorithms.SelectionSort"),
-	MERGE_SORT("Merge Sort", "sort.algorithms.MergeSort");
+	MERGE_SORT("Merge Sort", "sort.algorithms.MergeSort"),
+	SHELL_SORT("Merge Sort", "sort.algorithms.ShellSort");
 
 	private final String name;
 	private final String className;

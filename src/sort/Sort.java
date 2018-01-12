@@ -1,8 +1,8 @@
 package sort;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 import sort.algorithms.SortAlgorithm;
 import util.Util;
@@ -13,26 +13,25 @@ import util.Util;
  *
  */
 public class Sort {
-	public static void main(String args[]) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	private final static int COUNT = 20;
+
+	public static void main(String args[])
+			throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		List<Integer> array = new ArrayList<Integer>();
-		array.add(38);
-		array.add(27);
-		array.add(43);
-		array.add(3);
-		array.add(9);
-		array.add(82);
-		array.add(10);
-		
+
+		for (int i = 0; i < COUNT; i++) {
+			array.add(new Random().nextInt(100 - 0) + 1);
+		}
+
 		System.out.println("Initial Array");
 		Util.printArray(array);
 		System.out.println("\n");
-		
+
 		for (SortType searchType : SortType.values()) {
 			System.out.println(searchType.getName());
 			ClassLoader classLoader = SortType.class.getClassLoader();
-			Class sort = classLoader
-					.loadClass(searchType.getClassName());
-			
+			Class<?> sort = classLoader.loadClass(searchType.getClassName());
+
 			System.out.println("Sorted Array : ");
 			Util.printArray(((SortAlgorithm) sort.newInstance()).sort(new ArrayList<>(array)));
 			System.out.println("\n\n");
