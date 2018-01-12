@@ -8,7 +8,8 @@ package sort;
 public enum SortType {
 	BUBBLE_SORT("Bubble Sort", "sort.algorithms.BubbleSort"),
 	INSERTION_SORT("Insertion Sort", "sort.algorithms.InsertionSort"),
-    SELECTION_SORT("Selection Sort", "sort.algorithms.SelectionSort");
+    SELECTION_SORT("Selection Sort", "sort.algorithms.SelectionSort"),
+	MERGE_SORT("Merge Sort", "sort.algorithms.MergeSort");
 
 	private final String name;
 	private final String className;

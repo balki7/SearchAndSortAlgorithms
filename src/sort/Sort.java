@@ -15,12 +15,13 @@ import util.Util;
 public class Sort {
 	public static void main(String args[]) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		List<Integer> array = new ArrayList<Integer>();
-		array.add(50);
-		array.add(40);
+		array.add(38);
+		array.add(27);
+		array.add(43);
+		array.add(3);
+		array.add(9);
+		array.add(82);
 		array.add(10);
-		array.add(60);
-		array.add(30);
-		array.add(20);
 		
 		System.out.println("Initial Array");
 		Util.printArray(array);
