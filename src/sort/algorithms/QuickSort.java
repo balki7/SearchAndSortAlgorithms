@@ -48,10 +48,12 @@ public class QuickSort extends SortAlgorithm {
 			}
 		}
 
+		System.out.println("Lower Index : " + lowerIndex + " j : " + j);
 		if (lowerIndex < j) {
 			quickSort(array, lowerIndex, j);
 		}
 
+		System.out.println("Higher Index : " + higherIndex + " i : " + i);
 		if (i < higherIndex) {
 			quickSort(array, i, higherIndex);
 		}
