@@ -6,11 +6,11 @@ package sort;
  *
  */
 public enum SortType {
-	BUBBLE_SORT("Bubble Sort", "sort.algorithms.BubbleSort"),
-	INSERTION_SORT("Insertion Sort", "sort.algorithms.InsertionSort"),
-    SELECTION_SORT("Selection Sort", "sort.algorithms.SelectionSort"),
-	MERGE_SORT("Merge Sort", "sort.algorithms.MergeSort"),
-	SHELL_SORT("Merge Sort", "sort.algorithms.ShellSort");
+	BUBBLE_SORT("Bubble Sort", "sort.algorithms.BubbleSort"), INSERTION_SORT("Insertion Sort",
+			"sort.algorithms.InsertionSort"), SELECTION_SORT("Selection Sort",
+					"sort.algorithms.SelectionSort"), MERGE_SORT("Merge Sort", "sort.algorithms.MergeSort"), SHELL_SORT(
+							"Shell Sort",
+							"sort.algorithms.ShellSort"), QUICK_SORT("Quick Sort", "sort.algorithms.QuickSort");
 
 	private final String name;
 	private final String className;
@@ -30,8 +30,6 @@ public enum SortType {
 
 	public String getClassName() {
 		return className;
-	}	
-	
-	
+	}
 
 }

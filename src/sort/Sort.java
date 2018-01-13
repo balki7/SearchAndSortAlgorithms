@@ -32,7 +32,6 @@ public class Sort {
 			ClassLoader classLoader = SortType.class.getClassLoader();
 			Class<?> sort = classLoader.loadClass(searchType.getClassName());
 
-			System.out.println("Sorted Array : ");
 			Util.printArray(((SortAlgorithm) sort.newInstance()).sort(new ArrayList<>(array)));
 			System.out.println("\n\n");
 		}
